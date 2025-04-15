@@ -12,6 +12,8 @@ php artisan config:cache
 echo "Caching routes..."
 php artisan route:cache
 
+php artisan storage:link
+
 echo "Running migrations..."
 php artisan migrate --force
 echo "Running queue"

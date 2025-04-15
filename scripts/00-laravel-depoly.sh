@@ -15,4 +15,5 @@ php artisan route:cache
 echo "Running migrations..."
 php artisan migrate --force
 echo "Running queue"
-php artisan queue:work --tries=3 --timeout=90
+php artisan queue:work --tries=3 --timeout=90 &
+exec "$@"
